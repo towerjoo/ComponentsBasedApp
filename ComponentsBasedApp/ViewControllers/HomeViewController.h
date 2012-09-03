@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  HomeViewController.h
 //  ComponentsBasedApp
 //
 //  Created by Zhu Tao on 9/3/12.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HeaderStatusBasedViewController.h"
 
-@interface SecondViewController : UIViewController
+@interface HomeViewController : HeaderStatusBasedViewController
 
 @end

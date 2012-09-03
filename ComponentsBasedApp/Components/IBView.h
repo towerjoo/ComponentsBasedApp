@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  IBView.h
 //  ComponentsBasedApp
 //
 //  Created by Zhu Tao on 9/3/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface IBView : UIView
 
 @end

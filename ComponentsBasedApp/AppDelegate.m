@@ -7,10 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
-#import "FirstViewController.h"
-
-#import "SecondViewController.h"
+#import "HomeViewController.h"
+#import "ProfileViewController.h"
 
 @implementation AppDelegate
 
@@ -21,10 +19,18 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UIViewController *homeController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    UIViewController *profileController = [[ProfileViewController alloc] initWithNibName:@"ProfileViewController" bundle:nil];
+    
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:homeController];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:profileController];
+    [nav1 setNavigationBarHidden:YES];
+    [nav2 setNavigationBarHidden:YES];
+
+    
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:nav1, nav2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
