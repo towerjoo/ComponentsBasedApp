@@ -34,6 +34,8 @@
 		3C47098315F495B3005D8F2B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C47098215F495B3005D8F2B /* first@2x.png */; };
 		3C47098815F495B3005D8F2B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C47098715F495B3005D8F2B /* second.png */; };
 		3C47098A15F495B3005D8F2B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C47098915F495B3005D8F2B /* second@2x.png */; };
+		7D7D154615F7D14F002F8690 /* feeds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D7D154515F7D14F002F8690 /* feeds.plist */; };
+		7D7D154915F7D29A002F8690 /* FeedsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7D154815F7D29A002F8690 /* FeedsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,9 @@
 		3C47098215F495B3005D8F2B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		3C47098715F495B3005D8F2B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		3C47098915F495B3005D8F2B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		7D7D154515F7D14F002F8690 /* feeds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = feeds.plist; path = Resources/data/feeds.plist; sourceTree = "<group>"; };
+		7D7D154715F7D29A002F8690 /* FeedsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedsManager.h; path = Managers/FeedsManager.h; sourceTree = "<group>"; };
+		7D7D154815F7D29A002F8690 /* FeedsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedsManager.m; path = Managers/FeedsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,7 @@
 		3C11B17F15F49A4A005D790F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D7D154315F7D12C002F8690 /* data */,
 				3C11B18B15F49F22005D790F /* Header */,
 				3C47098015F495B3005D8F2B /* first.png */,
 				3C47098215F495B3005D8F2B /* first@2x.png */,
@@ -122,6 +128,8 @@
 			children = (
 				3C11B19B15F4A507005D790F /* NotificationManager.h */,
 				3C11B19C15F4A507005D790F /* NotificationManager.m */,
+				7D7D154715F7D29A002F8690 /* FeedsManager.h */,
+				7D7D154815F7D29A002F8690 /* FeedsManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -208,6 +216,14 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		7D7D154315F7D12C002F8690 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7D7D154515F7D14F002F8690 /* feeds.plist */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,6 +290,7 @@
 				3C11B19715F4A0ED005D790F /* header.qrcode.icon.png in Resources */,
 				3C11B19815F4A0ED005D790F /* header.search.icon.png in Resources */,
 				3C11B19915F4A0ED005D790F /* header.seperate.icon.png in Resources */,
+				7D7D154615F7D14F002F8690 /* feeds.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +310,7 @@
 				3C11B17E15F49A35005D790F /* StatusView.m in Sources */,
 				3C11B18615F49B71005D790F /* IBView.m in Sources */,
 				3C11B19D15F4A508005D790F /* NotificationManager.m in Sources */,
+				7D7D154915F7D29A002F8690 /* FeedsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
