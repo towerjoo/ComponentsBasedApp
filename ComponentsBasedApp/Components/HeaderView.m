@@ -7,16 +7,25 @@
 //
 
 #import "HeaderView.h"
+#import "NotificationManager.h"
 
 @implementation HeaderView
 @synthesize backBtn, navTitle;
 
 
 -(IBAction)onClickBackBtn:(id)sender{
-    
+    [[NotificationManager sharedManager] notePostClickBackBtn];
 }
 
 -(IBAction)onClickSearchBtn:(id)sender{
+    
+}
+
+-(void) initWhenviewDidLoad{
+    NSLog(@"I'm loaded");
+}
+
+-(void) initWhenViewDidAppear{
     
 }
 

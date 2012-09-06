@@ -26,6 +26,17 @@ static FeedsManager *sharedManager;
     return sharedManager;
 }
 
--(NSDictionary
+-(NSDictionary *) getFeedDetailByID:(int)feedID{
+    NSArray *item = [self.feeds objectAtIndex:feedID];
+    return [item objectAtIndex:1];
+}
+
+-(NSMutableArray *)getFeedsTitleList{
+    NSMutableArray *titles = [NSMutableArray arrayWithCapacity:10];
+    for(NSArray *array in self.feeds){
+        [titles addObject:[array objectAtIndex:0]];
+    }
+    return titles;
+}
 
 @end

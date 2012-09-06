@@ -7,6 +7,9 @@
 //
 
 #import "HeaderStatusBasedViewController.h"
+@interface HeaderStatusBasedViewController(Privae)
+-(void) handleClickBackBtn;
+@end
 
 @implementation HeaderStatusBasedViewController
 @synthesize headerView;
@@ -36,13 +39,16 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NotificationManager sharedManager] noteObserveClickBackBtn:self andhandler:@selector(handleClickBackBtn)];
+    if ([self.navigationController.viewControllers count] == 1){
+        headerView.backBtn.hidden = YES;
+    }
 }
-*/
 
 - (void)viewDidUnload
 {
@@ -60,6 +66,13 @@
 // MARK: for child class to customize
 -(void) setNavTitle:(NSString *)title{
     self.headerView.navTitle.text = title;
+}
+
+// MARK: private
+-(void) handleClickBackBtn{
+    if (self == self.navigationController.topViewController){
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 @end

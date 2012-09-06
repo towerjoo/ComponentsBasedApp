@@ -2,30 +2,17 @@
 //  ProfileViewController.m
 //  ComponentsBasedApp
 //
-//  Created by Zhu Tao on 9/6/12.
+//  Created by Zhu Tao on 9/3/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ProfileViewController.h"
+#import "FeedDetailViewController.h"
+#import "FeedsManager.h"
 
-@implementation ProfileViewController
+@implementation FeedDetailViewController
+@synthesize feedID;
+@synthesize feedTitle, feedContent;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
 
 #pragma mark - View lifecycle
 
@@ -33,6 +20,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setNavTitle:@"Feed Detail"];
+    NSDictionary *feedData = [[FeedsManager sharedManager] getFeedDetailByID:self.feedID];
+    self.feedTitle.text = [feedData objectForKey:@"title"];
+    self.feedContent.text = [feedData objectForKey:@"detail"];
 }
 
 - (void)viewDidUnload

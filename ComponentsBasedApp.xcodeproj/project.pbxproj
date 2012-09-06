@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		3C11B16B15F49980005D790F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C11B16915F49980005D790F /* HomeViewController.m */; };
 		3C11B16C15F49980005D790F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C11B16A15F49980005D790F /* HomeViewController.xib */; };
-		3C11B17115F499BC005D790F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C11B16F15F499BC005D790F /* ProfileViewController.m */; };
-		3C11B17215F499BC005D790F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C11B17015F499BC005D790F /* ProfileViewController.xib */; };
+		3C11B17115F499BC005D790F /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C11B16F15F499BC005D790F /* FeedDetailViewController.m */; };
+		3C11B17215F499BC005D790F /* FeedDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C11B17015F499BC005D790F /* FeedDetailViewController.xib */; };
 		3C11B17515F499E6005D790F /* HeaderStatusBasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C11B17415F499E6005D790F /* HeaderStatusBasedViewController.m */; };
 		3C11B17815F49A11005D790F /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C11B17715F49A11005D790F /* HeaderView.m */; };
 		3C11B17E15F49A35005D790F /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C11B17D15F49A35005D790F /* StatusView.m */; };
@@ -34,6 +34,8 @@
 		3C47098315F495B3005D8F2B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C47098215F495B3005D8F2B /* first@2x.png */; };
 		3C47098815F495B3005D8F2B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C47098715F495B3005D8F2B /* second.png */; };
 		3C47098A15F495B3005D8F2B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C47098915F495B3005D8F2B /* second@2x.png */; };
+		3CEC4FC915F8801D008539CE /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC4FC715F8801D008539CE /* ProfileViewController.m */; };
+		3CEC4FCA15F8801D008539CE /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEC4FC815F8801D008539CE /* ProfileViewController.xib */; };
 		7D7D154615F7D14F002F8690 /* feeds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D7D154515F7D14F002F8690 /* feeds.plist */; };
 		7D7D154915F7D29A002F8690 /* FeedsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7D154815F7D29A002F8690 /* FeedsManager.m */; };
 /* End PBXBuildFile section */
@@ -42,9 +44,9 @@
 		3C11B16815F49980005D790F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
 		3C11B16915F49980005D790F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
 		3C11B16A15F49980005D790F /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = ViewControllers/HomeViewController.xib; sourceTree = "<group>"; };
-		3C11B16E15F499BC005D790F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = ViewControllers/ProfileViewController.h; sourceTree = "<group>"; };
-		3C11B16F15F499BC005D790F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = ViewControllers/ProfileViewController.m; sourceTree = "<group>"; };
-		3C11B17015F499BC005D790F /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = ViewControllers/ProfileViewController.xib; sourceTree = "<group>"; };
+		3C11B16E15F499BC005D790F /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedDetailViewController.h; path = ViewControllers/FeedDetailViewController.h; sourceTree = "<group>"; };
+		3C11B16F15F499BC005D790F /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedDetailViewController.m; path = ViewControllers/FeedDetailViewController.m; sourceTree = "<group>"; };
+		3C11B17015F499BC005D790F /* FeedDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedDetailViewController.xib; path = ViewControllers/FeedDetailViewController.xib; sourceTree = "<group>"; };
 		3C11B17315F499E6005D790F /* HeaderStatusBasedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderStatusBasedViewController.h; path = ViewControllers/HeaderStatusBasedViewController.h; sourceTree = "<group>"; };
 		3C11B17415F499E6005D790F /* HeaderStatusBasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderStatusBasedViewController.m; path = ViewControllers/HeaderStatusBasedViewController.m; sourceTree = "<group>"; };
 		3C11B17615F49A11005D790F /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = Components/HeaderView.h; sourceTree = "<group>"; };
@@ -78,6 +80,9 @@
 		3C47098215F495B3005D8F2B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		3C47098715F495B3005D8F2B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		3C47098915F495B3005D8F2B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		3CEC4FC615F8801C008539CE /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = ViewControllers/ProfileViewController.h; sourceTree = "<group>"; };
+		3CEC4FC715F8801D008539CE /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = ViewControllers/ProfileViewController.m; sourceTree = "<group>"; };
+		3CEC4FC815F8801D008539CE /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = ViewControllers/ProfileViewController.xib; sourceTree = "<group>"; };
 		7D7D154515F7D14F002F8690 /* feeds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = feeds.plist; path = Resources/data/feeds.plist; sourceTree = "<group>"; };
 		7D7D154715F7D29A002F8690 /* FeedsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedsManager.h; path = Managers/FeedsManager.h; sourceTree = "<group>"; };
 		7D7D154815F7D29A002F8690 /* FeedsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedsManager.m; path = Managers/FeedsManager.m; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 		3C11B17F15F49A4A005D790F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3CEC4FBF15F876C0008539CE /* include */,
 				7D7D154315F7D12C002F8690 /* data */,
 				3C11B18B15F49F22005D790F /* Header */,
 				3C47098015F495B3005D8F2B /* first.png */,
@@ -207,13 +213,23 @@
 				3C11B16815F49980005D790F /* HomeViewController.h */,
 				3C11B16915F49980005D790F /* HomeViewController.m */,
 				3C11B16A15F49980005D790F /* HomeViewController.xib */,
-				3C11B16E15F499BC005D790F /* ProfileViewController.h */,
-				3C11B16F15F499BC005D790F /* ProfileViewController.m */,
-				3C11B17015F499BC005D790F /* ProfileViewController.xib */,
+				3C11B16E15F499BC005D790F /* FeedDetailViewController.h */,
+				3C11B16F15F499BC005D790F /* FeedDetailViewController.m */,
+				3C11B17015F499BC005D790F /* FeedDetailViewController.xib */,
 				3C11B17315F499E6005D790F /* HeaderStatusBasedViewController.h */,
 				3C11B17415F499E6005D790F /* HeaderStatusBasedViewController.m */,
+				3CEC4FC615F8801C008539CE /* ProfileViewController.h */,
+				3CEC4FC715F8801D008539CE /* ProfileViewController.m */,
+				3CEC4FC815F8801D008539CE /* ProfileViewController.xib */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3CEC4FBF15F876C0008539CE /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 		7D7D154315F7D12C002F8690 /* data */ = {
@@ -280,7 +296,7 @@
 				3C47098815F495B3005D8F2B /* second.png in Resources */,
 				3C47098A15F495B3005D8F2B /* second@2x.png in Resources */,
 				3C11B16C15F49980005D790F /* HomeViewController.xib in Resources */,
-				3C11B17215F499BC005D790F /* ProfileViewController.xib in Resources */,
+				3C11B17215F499BC005D790F /* FeedDetailViewController.xib in Resources */,
 				3C11B18115F49B42005D790F /* HeaderView.xib in Resources */,
 				3C11B18315F49B55005D790F /* StatusView.xib in Resources */,
 				3C11B19315F4A0ED005D790F /* header.backarrow.png in Resources */,
@@ -291,6 +307,7 @@
 				3C11B19815F4A0ED005D790F /* header.search.icon.png in Resources */,
 				3C11B19915F4A0ED005D790F /* header.seperate.icon.png in Resources */,
 				7D7D154615F7D14F002F8690 /* feeds.plist in Resources */,
+				3CEC4FCA15F8801D008539CE /* ProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,13 +321,14 @@
 				3C47097815F495B3005D8F2B /* main.m in Sources */,
 				3C47097C15F495B3005D8F2B /* AppDelegate.m in Sources */,
 				3C11B16B15F49980005D790F /* HomeViewController.m in Sources */,
-				3C11B17115F499BC005D790F /* ProfileViewController.m in Sources */,
+				3C11B17115F499BC005D790F /* FeedDetailViewController.m in Sources */,
 				3C11B17515F499E6005D790F /* HeaderStatusBasedViewController.m in Sources */,
 				3C11B17815F49A11005D790F /* HeaderView.m in Sources */,
 				3C11B17E15F49A35005D790F /* StatusView.m in Sources */,
 				3C11B18615F49B71005D790F /* IBView.m in Sources */,
 				3C11B19D15F4A508005D790F /* NotificationManager.m in Sources */,
 				7D7D154915F7D29A002F8690 /* FeedsManager.m in Sources */,
+				3CEC4FC915F8801D008539CE /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

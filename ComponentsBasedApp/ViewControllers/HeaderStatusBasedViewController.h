@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Components.h"
+#import "NotificationManager.h"
 @interface HeaderStatusBasedViewController : UIViewController
 {
     HeaderView *headerView;
 }
 @property (nonatomic, retain) IBOutlet HeaderView *headerView;
 -(void) setNavTitle:(NSString *)title;
+
 @end

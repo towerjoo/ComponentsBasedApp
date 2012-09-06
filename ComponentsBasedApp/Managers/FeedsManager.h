@@ -16,7 +16,7 @@
 
 
 +(FeedsManager *)sharedManager;
--(NSArray *)getFeedsTitleList;
--(NSDictionary *)getFeedDetailByID:(NSString *)feedID;
+-(NSMutableArray *)getFeedsTitleList;
+-(NSDictionary *)getFeedDetailByID:(int)feedID;
 
 @end

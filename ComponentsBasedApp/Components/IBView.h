@@ -10,4 +10,6 @@
 
 @interface IBView : UIView
 
+-(void) initWhenViewDidAppear;
+-(void) initWhenviewDidLoad;
 @end

@@ -7,45 +7,36 @@
 //
 
 #import "HomeViewController.h"
+#import "FeedsManager.h"
+#import "FeedDetailViewController.h"
 
 @implementation HomeViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
+-(void) viewDidLoad{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self setNavTitle:@"Home"];
+//    NSLog(@"%@", self.headerView.userInteractionEnabled);
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+// MARK: table views delegates
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [[[FeedsManager sharedManager] getFeedsTitleList] count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"HomeFeedTableCell"];
+    cell.textLabel.text = [[[FeedsManager sharedManager] getFeedsTitleList] objectAtIndex:indexPath.row];
+    return cell;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    FeedDetailViewController *controller = [[FeedDetailViewController alloc] initWithNibName:@"FeedDetailViewController" bundle:nil];
+    controller.feedID = indexPath.row;
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

@@ -28,7 +28,6 @@
 }
 
 
-
 -(id) initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self){
@@ -45,5 +44,14 @@
     // Drawing code
 }
 */
+
+// need override in child class
+-(void) initWhenviewDidLoad{
+    
+}
+
+-(void) initWhenViewDidAppear{
+    
+}
 
 @end

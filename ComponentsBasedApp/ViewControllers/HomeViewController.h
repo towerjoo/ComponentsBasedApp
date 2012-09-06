@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HeaderStatusBasedViewController.h"
 
-@interface HomeViewController : HeaderStatusBasedViewController
+@interface HomeViewController : HeaderStatusBasedViewController<UITableViewDelegate, UITableViewDataSource>
+
 
 @end
